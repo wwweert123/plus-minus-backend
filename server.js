@@ -18,3 +18,5 @@ app.use("/", require("./routes/root"));
 app.use("/plus-minus", require("./routes/api/plus-minus"));
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
+module.exports = app;
