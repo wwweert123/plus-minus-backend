@@ -33,7 +33,7 @@ describe("plus-minus", () => {
         it("it should POST 2 numbers and return the added number, negative number used", (done) => {
             let params = {
                 number1: "-100",
-                number2: "2",
+                number2: "20",
             };
 
             chai.request(server)
