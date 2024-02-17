@@ -11,4 +11,6 @@ app.use(cors(corsOptions));
 // built-in middleware for json
 app.use(express.json());
 
+app.use("/", require("./routes/root"));
+
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
