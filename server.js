@@ -11,6 +11,10 @@ app.use(cors(corsOptions));
 // built-in middleware for json
 app.use(express.json());
 
+// built-in middleware to handle urlencoded form data
+app.use(express.urlencoded({ extended: false }));
+
 app.use("/", require("./routes/root"));
+app.use("/plus-minus", require("./routes/api/plus-minus"));
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
